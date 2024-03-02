@@ -1,0 +1,57 @@
+{
+  "name": "elixir-mix-format",
+  "displayName": "Mix Format for Elixir",
+  "version": "1.0.0",
+  "publisher": "elliotekj",
+  "description": "A mix format extension that supports monorepos.",
+  "author": {
+    "name": "Elliot Jackson"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "keywords": [
+    "formatter",
+    "elixir",
+    "mix",
+    "ex",
+    "exs",
+    "heex",
+    "phoenix"
+  ],
+  "icon": "images/icon.png",
+  "pricing": "Free",
+  "activationEvents": [
+    "onLanguage:elixir",
+    "onLanguage:phoenix-heex",
+    "onLanguage:html-eex"
+  ],
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "main": "./src/extension.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.6",
+    "@vscode/test-electron": "^2.3.9"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/elliotekj/vscode-mix-format/issues",
+    "email": "sean@contoso.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elliotekj/vscode-mix-format.git"
+  },
+  "homepage": "https://github.com/elliotekj/vscode-mix-format/blob/main/README.md"
+}
